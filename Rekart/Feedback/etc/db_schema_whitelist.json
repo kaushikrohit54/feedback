@@ -1,0 +1,16 @@
+{
+    "rekart_feedback": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "mobile": true,
+            "email": true,
+            "feedback": true,
+            "disclaimer": true,
+            "create_date": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

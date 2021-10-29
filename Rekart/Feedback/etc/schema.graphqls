@@ -1,0 +1,24 @@
+type Mutation {
+    createQueryFeedbacks(input: QueryFeedbackInput!): QueryFeedbackOutput @resolver(class: "\\Rekart\\Feedback\\Model\\Resolver\\CreatQueryFeedback") @doc(description: "Create a new Query Feedback")
+}
+
+type QueryFeedbackOutput {
+    feedback_submit: QueryFeedback!
+}
+
+input QueryFeedbackInput {
+    name: String @doc(description: "")
+    mobile: String @doc(description: "")
+    email: String @doc(description: "")
+    feedback: String @doc(description: "")
+    disclaimer: String @doc(description: "")
+}
+
+type QueryFeedback {
+    entity_id: Int @doc(description: ""),
+    name: String @doc(description: ""),
+    mobile: String @doc(description: ""),
+    email: String @doc(description: ""),
+    feedback: String @doc(description: ""),
+    disclaimer: String @doc(description: ""),
+}
